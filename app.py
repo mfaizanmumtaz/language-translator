@@ -51,8 +51,6 @@ if doc_file is not None:
         except Exception as e:
             st.write("There is some error",e)
 
-        finally:
-            os.remove(file_path)
     target_language = st.text_input("Enter target language:")
 
     if st.button("Translate") and target_language:
